@@ -419,6 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +441,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
