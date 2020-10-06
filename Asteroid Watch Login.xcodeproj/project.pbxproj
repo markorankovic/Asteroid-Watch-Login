@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADCE1650252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */; };
+		ADCE1652252CECA0001EF2C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE1651252CECA0001EF2C2 /* ContentView.swift */; };
+		ADCE1654252CECA2001EF2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCE1653252CECA2001EF2C2 /* Assets.xcassets */; };
+		ADCE1657252CECA2001EF2C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCE1656252CECA2001EF2C2 /* Preview Assets.xcassets */; };
+		ADCE1662252CECA2001EF2C2 /* Asteroid_Watch_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE1661252CECA2001EF2C2 /* Asteroid_Watch_LoginTests.swift */; };
+		ADCE166D252CECA2001EF2C2 /* Asteroid_Watch_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE166C252CECA2001EF2C2 /* Asteroid_Watch_LoginUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADCE165E252CECA2001EF2C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCE1644252CECA0001EF2C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCE164B252CECA0001EF2C2;
+			remoteInfo = "Asteroid Watch Login";
+		};
+		ADCE1669252CECA2001EF2C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADCE1644252CECA0001EF2C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADCE164B252CECA0001EF2C2;
+			remoteInfo = "Asteroid Watch Login";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADCE164C252CECA0001EF2C2 /* Asteroid Watch Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asteroid Watch Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid_Watch_LoginApp.swift; sourceTree = "<group>"; };
+		ADCE1651252CECA0001EF2C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADCE1653252CECA2001EF2C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADCE1656252CECA2001EF2C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADCE1658252CECA2001EF2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCE165D252CECA2001EF2C2 /* Asteroid Watch LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Asteroid Watch LoginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCE1661252CECA2001EF2C2 /* Asteroid_Watch_LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid_Watch_LoginTests.swift; sourceTree = "<group>"; };
+		ADCE1663252CECA2001EF2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCE1668252CECA2001EF2C2 /* Asteroid Watch LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Asteroid Watch LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCE166C252CECA2001EF2C2 /* Asteroid_Watch_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid_Watch_LoginUITests.swift; sourceTree = "<group>"; };
+		ADCE166E252CECA2001EF2C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADCE1649252CECA0001EF2C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCE165A252CECA2001EF2C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCE1665252CECA2001EF2C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCE1643252CECA0001EF2C2 = {
+			isa = PBXGroup;
+			children = (
+				ADCE164E252CECA0001EF2C2 /* Asteroid Watch Login */,
+				ADCE1660252CECA2001EF2C2 /* Asteroid Watch LoginTests */,
+				ADCE166B252CECA2001EF2C2 /* Asteroid Watch LoginUITests */,
+				ADCE164D252CECA0001EF2C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADCE164D252CECA0001EF2C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADCE164C252CECA0001EF2C2 /* Asteroid Watch Login.app */,
+				ADCE165D252CECA2001EF2C2 /* Asteroid Watch LoginTests.xctest */,
+				ADCE1668252CECA2001EF2C2 /* Asteroid Watch LoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADCE164E252CECA0001EF2C2 /* Asteroid Watch Login */ = {
+			isa = PBXGroup;
+			children = (
+				ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */,
+				ADCE1651252CECA0001EF2C2 /* ContentView.swift */,
+				ADCE1653252CECA2001EF2C2 /* Assets.xcassets */,
+				ADCE1658252CECA2001EF2C2 /* Info.plist */,
+				ADCE1655252CECA2001EF2C2 /* Preview Content */,
+			);
+			path = "Asteroid Watch Login";
+			sourceTree = "<group>";
+		};
+		ADCE1655252CECA2001EF2C2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ADCE1656252CECA2001EF2C2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ADCE1660252CECA2001EF2C2 /* Asteroid Watch LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADCE1661252CECA2001EF2C2 /* Asteroid_Watch_LoginTests.swift */,
+				ADCE1663252CECA2001EF2C2 /* Info.plist */,
+			);
+			path = "Asteroid Watch LoginTests";
+			sourceTree = "<group>";
+		};
+		ADCE166B252CECA2001EF2C2 /* Asteroid Watch LoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADCE166C252CECA2001EF2C2 /* Asteroid_Watch_LoginUITests.swift */,
+				ADCE166E252CECA2001EF2C2 /* Info.plist */,
+			);
+			path = "Asteroid Watch LoginUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADCE164B252CECA0001EF2C2 /* Asteroid Watch Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCE1671252CECA2001EF2C2 /* Build configuration list for PBXNativeTarget "Asteroid Watch Login" */;
+			buildPhases = (
+				ADCE1648252CECA0001EF2C2 /* Sources */,
+				ADCE1649252CECA0001EF2C2 /* Frameworks */,
+				ADCE164A252CECA0001EF2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Asteroid Watch Login";
+			productName = "Asteroid Watch Login";
+			productReference = ADCE164C252CECA0001EF2C2 /* Asteroid Watch Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADCE165C252CECA2001EF2C2 /* Asteroid Watch LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCE1674252CECA2001EF2C2 /* Build configuration list for PBXNativeTarget "Asteroid Watch LoginTests" */;
+			buildPhases = (
+				ADCE1659252CECA2001EF2C2 /* Sources */,
+				ADCE165A252CECA2001EF2C2 /* Frameworks */,
+				ADCE165B252CECA2001EF2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADCE165F252CECA2001EF2C2 /* PBXTargetDependency */,
+			);
+			name = "Asteroid Watch LoginTests";
+			productName = "Asteroid Watch LoginTests";
+			productReference = ADCE165D252CECA2001EF2C2 /* Asteroid Watch LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADCE1667252CECA2001EF2C2 /* Asteroid Watch LoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCE1677252CECA2001EF2C2 /* Build configuration list for PBXNativeTarget "Asteroid Watch LoginUITests" */;
+			buildPhases = (
+				ADCE1664252CECA2001EF2C2 /* Sources */,
+				ADCE1665252CECA2001EF2C2 /* Frameworks */,
+				ADCE1666252CECA2001EF2C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADCE166A252CECA2001EF2C2 /* PBXTargetDependency */,
+			);
+			name = "Asteroid Watch LoginUITests";
+			productName = "Asteroid Watch LoginUITests";
+			productReference = ADCE1668252CECA2001EF2C2 /* Asteroid Watch LoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADCE1644252CECA0001EF2C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					ADCE164B252CECA0001EF2C2 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ADCE165C252CECA2001EF2C2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ADCE164B252CECA0001EF2C2;
+					};
+					ADCE1667252CECA2001EF2C2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ADCE164B252CECA0001EF2C2;
+					};
+				};
+			};
+			buildConfigurationList = ADCE1647252CECA0001EF2C2 /* Build configuration list for PBXProject "Asteroid Watch Login" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADCE1643252CECA0001EF2C2;
+			productRefGroup = ADCE164D252CECA0001EF2C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADCE164B252CECA0001EF2C2 /* Asteroid Watch Login */,
+				ADCE165C252CECA2001EF2C2 /* Asteroid Watch LoginTests */,
+				ADCE1667252CECA2001EF2C2 /* Asteroid Watch LoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADCE164A252CECA0001EF2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCE1657252CECA2001EF2C2 /* Preview Assets.xcassets in Resources */,
+				ADCE1654252CECA2001EF2C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCE165B252CECA2001EF2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCE1666252CECA2001EF2C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADCE1648252CECA0001EF2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCE1652252CECA0001EF2C2 /* ContentView.swift in Sources */,
+				ADCE1650252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCE1659252CECA2001EF2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCE1662252CECA2001EF2C2 /* Asteroid_Watch_LoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCE1664252CECA2001EF2C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCE166D252CECA2001EF2C2 /* Asteroid_Watch_LoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADCE165F252CECA2001EF2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCE164B252CECA0001EF2C2 /* Asteroid Watch Login */;
+			targetProxy = ADCE165E252CECA2001EF2C2 /* PBXContainerItemProxy */;
+		};
+		ADCE166A252CECA2001EF2C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADCE164B252CECA0001EF2C2 /* Asteroid Watch Login */;
+			targetProxy = ADCE1669252CECA2001EF2C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADCE166F252CECA2001EF2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADCE1670252CECA2001EF2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADCE1672252CECA2001EF2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADCE1673252CECA2001EF2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADCE1675252CECA2001EF2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Asteroid Watch LoginTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Asteroid Watch Login.app/Asteroid Watch Login";
+			};
+			name = Debug;
+		};
+		ADCE1676252CECA2001EF2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Asteroid Watch LoginTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Asteroid Watch Login.app/Asteroid Watch Login";
+			};
+			name = Release;
+		};
+		ADCE1678252CECA2001EF2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Asteroid Watch LoginUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Asteroid Watch Login";
+			};
+			name = Debug;
+		};
+		ADCE1679252CECA2001EF2C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Asteroid Watch LoginUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Asteroid Watch Login";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADCE1647252CECA0001EF2C2 /* Build configuration list for PBXProject "Asteroid Watch Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCE166F252CECA2001EF2C2 /* Debug */,
+				ADCE1670252CECA2001EF2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCE1671252CECA2001EF2C2 /* Build configuration list for PBXNativeTarget "Asteroid Watch Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCE1672252CECA2001EF2C2 /* Debug */,
+				ADCE1673252CECA2001EF2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCE1674252CECA2001EF2C2 /* Build configuration list for PBXNativeTarget "Asteroid Watch LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCE1675252CECA2001EF2C2 /* Debug */,
+				ADCE1676252CECA2001EF2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADCE1677252CECA2001EF2C2 /* Build configuration list for PBXNativeTarget "Asteroid Watch LoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCE1678252CECA2001EF2C2 /* Debug */,
+				ADCE1679252CECA2001EF2C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADCE1644252CECA0001EF2C2 /* Project object */;
+}
