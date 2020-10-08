@@ -1,15 +1,18 @@
-import XCTest
-@testable import AsteroidWatchLoginAPI
-
-final class AsteroidWatchLoginAPITests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(AsteroidWatchLoginAPI().text, "Hello, World!")
+final class AsteroidWatchLoginAPITests: Hopes {
+    
+    func test_login() {
+        var api = AsteroidWatchLoginAPI()
+        let email = "jackhernandez@gmail.com"
+        let password = "football88"
+        api.signup(email: email, password: password)
+        hope(api.login(email: email, password: password)) == true
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
+    
+    func test_signup() {
+        var api = AsteroidWatchLoginAPI()
+        let email = "jackhernandez@gmail.com"
+        let password = "football88"
+        hope(api.signup(email: email, password: password)) == true
+    }
+    
 }
