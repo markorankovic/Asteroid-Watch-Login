@@ -1,4 +1,4 @@
-final class AsteroidWatchLoginAPITests: Hopes {
+final class ServerSideTests: Hopes {
     
     func test_login() {
         var server = AsteroidWatchLoginAPI.Server()
