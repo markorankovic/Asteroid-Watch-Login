@@ -1,5 +1,7 @@
 final class ClientSideTests: Hopes {
     
+    // LOGIN
+    
     func test_login_success() {
         let email = "jackhernandez@gmail.com"
         let password = "football88"
@@ -12,6 +14,8 @@ final class ClientSideTests: Hopes {
             receiveCompletion: { _ in promise.fulfill() },
             receiveValue: { XCTAssert($0) }
         )
+        
+        print("subscription of \(#function): \(subscription)")
         
         wait(for: [promise], timeout: client.server.delay + 0.1)
     }
@@ -29,8 +33,47 @@ final class ClientSideTests: Hopes {
             receiveValue: { XCTAssertFalse($0) }
         )
         
+        print("subscription of \(#function): \(subscription)")
+
+        wait(for: [promise], timeout: client.server.delay + 0.1)
+    }
+    
+    // SIGNUP
+        
+    func test_signup_success() {
+        let email = "jackhernandez@gmail.com"
+        let password = "football88"
+        let client = AsteroidWatchLoginAPI.Client()
+        
+        let promise = expectation(description: #function)
+
+        let subscription = client.signup(email: email, password: password).sink(
+            receiveCompletion: { _ in promise.fulfill() },
+            receiveValue: { XCTAssert($0) }
+        )
+        
+        print("subscription of \(#function): \(subscription)")
+        
+        wait(for: [promise], timeout: client.server.delay + 0.1)
+    }
+    
+    func test_signup_failure() {
+        let email = "jackhernandez@gmail.com"
+        let password = "football88"
+        let client = AsteroidWatchLoginAPI.Client()
+        
+        let promise = expectation(description: #function)
+
+        print("Signup in \(#function): \(client.server.signup(email: email, password: password))")
+
+        let subscription = client.signup(email: email, password: password).sink(
+            receiveCompletion: { _ in promise.fulfill() },
+            receiveValue: { XCTAssertFalse($0) }
+        )
+        
+        print("subscription of \(#function): \(subscription)")
+        
         wait(for: [promise], timeout: client.server.delay + 0.1)
     }
 
-    
 }
