@@ -3,52 +3,44 @@ public protocol AccountTypeAliases {
     typealias Password = String
 }
 
-protocol Login: AccountTypeAliases {
-            
-    func login(email: Email, password: Password) -> Bool
+public class Account {
     
-    func exists(_ email: Email) -> Bool
+    var email: String
+    let profile: Profile
     
-    func emailAndPasswordMatch(email: Email, password: Password) -> Bool
-    
-}
-
-protocol Signup: AccountTypeAliases {
-    
-    mutating func signup(email: Email, password: Password) -> Bool
-
-}
-
-extension AsteroidWatchLoginAPI {
-    public func emailAndPasswordMatch(email: Email, password: Password) -> Bool {
-        return password == emailPasswordPairs[email]
+    public init(email: String, profile: Profile) {
+        self.email = email
+        self.profile = profile
     }
-}
-
-extension AsteroidWatchLoginAPI {
-    public func exists(_ email: Email) -> Bool {
-        return emailPasswordPairs.keys.contains(email)
-    }
-}
-
-extension AsteroidWatchLoginAPI {
-    public func login(email: Email, password: Password) -> Bool {
-        if exists(email) { return emailAndPasswordMatch(email: email, password: password) }
-        return false
-    }
-}
-
-extension AsteroidWatchLoginAPI {
-    public mutating func signup(email: Email, password: Password) -> Bool {
-        guard exists(email) else {
-            emailPasswordPairs[email] = password
-            return true
+    
+    public class Profile {
+        
+        var name: String
+        var age: Int
+        
+        public init(name: String, age: Int) {
+            self.name = name
+            self.age = age
         }
-        return false
+        
     }
+    
 }
 
-public struct AsteroidWatchLoginAPI: Login, Signup {
-    private var emailPasswordPairs: [Email : Password] = [:]
+public struct AsteroidWatchLoginAPI {
+    
     public init() {}
+    
+    public class Server {
+        public let delay = 3.0
+        internal var emailPasswordAccountPairs: [Email : (Password, Account)] = [:]
+        internal var loggedInAccounts: Set<Email> = []
+        public init() {}
+    }
+    
+    public class Client {
+        public var server = Server()
+        public init() {}
+    }
+
 }
