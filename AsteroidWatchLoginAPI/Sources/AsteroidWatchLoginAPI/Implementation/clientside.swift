@@ -1,12 +1,12 @@
 extension AsteroidWatchLoginAPI.Client {
-    public func login(email: Email, password: Password) -> Future<Bool, APIError> {
+    public func login(email: Email, password: Password) -> Future<AuthResponse, APIError> {
         Future { [weak self] promise in
             guard let self = self else {
                 return promise(.failure(APIError(message: "Server deallocated")))
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + self.server.delay) {
-                let bool = self.server.login(email: email, password: password)
-                return promise(.success(bool))
+                let token = self.server.login(email: email, password: password)
+                return promise(.success(token))
             }
         }
     }

@@ -13,7 +13,11 @@ final class ClientSideTests: Hopes {
         
         let subscription = client.login(email: email, password: password).sink(
             receiveCompletion: { _ in promise.fulfill() },
-            receiveValue: { XCTAssert($0) }
+            receiveValue: {
+                guard case .success = $0 else {
+                    return XCTFail()
+                }
+            }
         )
         
         print("subscription of \(#function): \(subscription)")
@@ -32,7 +36,11 @@ final class ClientSideTests: Hopes {
         
         let subscription = client.login(email: email, password: "").sink(
             receiveCompletion: { _ in promise.fulfill() },
-            receiveValue: { XCTAssertFalse($0) }
+            receiveValue: {
+                guard case .error = $0 else {
+                    return XCTFail()
+                }
+            }
         )
         
         print("subscription of \(#function): \(subscription)")
@@ -41,7 +49,7 @@ final class ClientSideTests: Hopes {
     }
     
     // SIGNUP
-        
+    
     func test_signup_success() {
         let email = "jackhernandez@gmail.com"
         let password = "football88"

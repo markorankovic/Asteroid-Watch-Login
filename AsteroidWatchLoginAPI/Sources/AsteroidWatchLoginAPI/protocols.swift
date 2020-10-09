@@ -1,9 +1,10 @@
 public typealias Email = String
 public typealias Password = String
+public typealias Token = String
 
 protocol ClientSideProtocol {
             
-    func login(email: Email, password: Password) -> Future<Bool, APIError>
+    func login(email: Email, password: Password) -> Future<AuthResponse, APIError>
     
     func signup(email: Email, password: Password, profile: Account.Profile) -> Future<Bool, APIError>
         
@@ -11,7 +12,7 @@ protocol ClientSideProtocol {
 
 protocol ServerSideProtocol {
             
-    mutating func login(email: Email, password: Password) -> Bool
+    mutating func login(email: Email, password: Password) -> AuthResponse
     
     mutating func signup(email: Email, password: Password, profile: Account.Profile) -> Bool
     

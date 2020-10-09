@@ -1,3 +1,8 @@
+public enum AuthResponse {
+    case error(String)
+    case success(Token)
+}
+
 public class Account {
     
     var email: Email

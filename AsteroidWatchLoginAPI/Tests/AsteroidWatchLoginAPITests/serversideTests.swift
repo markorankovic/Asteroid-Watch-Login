@@ -6,7 +6,10 @@ final class ServerSideTests: Hopes {
         let profile = Account.Profile(name: "Jack", age: 38)
         let password = "football88"
         print("Signup in \(#function): \(server.signup(email: email, password: password, profile: profile))")
-        hope(server.login(email: email, password: password)) == true
+        let response = server.login(email: email, password: password)
+        guard case .success = response else {
+            return XCTFail()
+        }
     }
     
     func test_signup() {
