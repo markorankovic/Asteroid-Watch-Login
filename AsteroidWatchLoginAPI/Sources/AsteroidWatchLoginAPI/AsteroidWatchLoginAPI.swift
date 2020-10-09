@@ -1,11 +1,6 @@
-public protocol AccountTypeAliases {
-    typealias Email = String
-    typealias Password = String
-}
-
 public class Account {
     
-    var email: String
+    var email: Email
     let profile: Profile
     
     public init(email: String, profile: Profile) {

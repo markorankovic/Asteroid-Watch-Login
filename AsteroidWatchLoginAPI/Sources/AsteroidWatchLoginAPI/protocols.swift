@@ -1,4 +1,7 @@
-protocol ClientSideProtocol: AccountTypeAliases {
+public typealias Email = String
+public typealias Password = String
+
+protocol ClientSideProtocol {
             
     func login(email: Email, password: Password) -> Future<Bool, APIError>
     
@@ -6,7 +9,7 @@ protocol ClientSideProtocol: AccountTypeAliases {
         
 }
 
-protocol ServerSideProtocol: AccountTypeAliases {
+protocol ServerSideProtocol {
             
     mutating func login(email: Email, password: Password) -> Bool
     

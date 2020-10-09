@@ -1,5 +1,5 @@
 extension AsteroidWatchLoginAPI.Client {
-    public func login(email: AccountTypeAliases.Email, password: AccountTypeAliases.Password) -> Future<Bool, APIError> {
+    public func login(email: Email, password: Password) -> Future<Bool, APIError> {
         Future { [weak self] promise in
             guard let self = self else {
                 return promise(.failure(APIError(message: "Server deallocated")))
@@ -13,7 +13,7 @@ extension AsteroidWatchLoginAPI.Client {
 }
 
 extension AsteroidWatchLoginAPI.Client {
-    public func signup(email: AccountTypeAliases.Email, password: AccountTypeAliases.Password, profile: Account.Profile) -> Future<Bool, APIError> {
+    public func signup(email: Email, password: Password, profile: Account.Profile) -> Future<Bool, APIError> {
         Future { [weak self] promise in
             guard let self = self else {
                 return promise(.failure(APIError(message: "Server deallocated")))
