@@ -1,6 +1,16 @@
+public enum ProfileResponse {
+    case error(String)
+    case success(Account.Profile)
+}
+
 public enum AuthResponse {
     case error(String)
     case success(Token)
+}
+
+public enum LogoutResponse {
+    case error(String)
+    case success(String)
 }
 
 public class Account {
@@ -34,7 +44,7 @@ public struct AsteroidWatchLoginAPI {
     public class Server {
         public let delay = 3.0
         internal var emailPasswordAccountPairs: [Email : (Password, Account)] = [:]
-        internal var loggedInAccounts: Set<Email> = []
+        internal var loggedInAccounts: [Token : Account] = [:]
         public init() {}
     }
     

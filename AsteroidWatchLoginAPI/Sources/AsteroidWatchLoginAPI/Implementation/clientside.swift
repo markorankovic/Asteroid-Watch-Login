@@ -1,4 +1,27 @@
-extension AsteroidWatchLoginAPI.Client {
+extension AsteroidWatchLoginAPI.Client: ClientSideProtocol {
+    
+    public func logout(token: Token) -> Future<LogoutResponse, APIError> {
+        Future { [weak self] promise in
+            guard let self = self else {
+                return promise(.failure(APIError(message: "Server deallocated")))
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + self.server.delay) {
+                return promise(.success(self.server.logout(token: token)))
+            }
+        }
+    }
+    
+    public func getProfile(token: Token) -> Future<ProfileResponse, APIError> {
+        Future { [weak self] promise in
+            guard let self = self else {
+                return promise(.failure(APIError(message: "Server deallocated")))
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + self.server.delay) {
+                return promise(.success(self.server.getProfile(token: token)))
+            }
+        }
+    }
+    
     public func login(email: Email, password: Password) -> Future<AuthResponse, APIError> {
         Future { [weak self] promise in
             guard let self = self else {
@@ -10,9 +33,7 @@ extension AsteroidWatchLoginAPI.Client {
             }
         }
     }
-}
-
-extension AsteroidWatchLoginAPI.Client {
+    
     public func signup(email: Email, password: Password, profile: Account.Profile) -> Future<Bool, APIError> {
         Future { [weak self] promise in
             guard let self = self else {
@@ -24,18 +45,5 @@ extension AsteroidWatchLoginAPI.Client {
             }
         }
     }
+    
 }
-
-//extension AsteroidWatchLoginAPI.Client {
-//    private func task(closure: @escaping (_ email: AccountTypeAliases.Email, _ password: AccountTypeAliases.Password) -> Bool, email: AccountTypeAliases.Email, password: AccountTypeAliases.Password) -> Future<Bool, APIError> {
-//        Future { [weak self] promise in
-//            guard let self = self else {
-//                return promise(.failure(APIError(message: "Server deallocated")))
-//            }
-//            DispatchQueue.main.asyncAfter(deadline: .now() + self.server.delay) {
-//                let bool = closure(email, password, profile)
-//                return promise(.success(bool))
-//            }
-//        }
-//    }
-//}

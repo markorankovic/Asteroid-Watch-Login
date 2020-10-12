@@ -1,12 +1,21 @@
 final class ServerSideTests: Hopes {
     
+    func test_logout() {
+        let server = AsteroidWatchLoginAPI.Server()
+        print("Signup in \(#function): \(server.signup(email: valid_email, password: password, profile: profile))")
+        guard case .success(let token) = server.login(email: valid_email, password: password) else {
+            return XCTFail()
+        }
+        let response = server.logout(token: token)
+        guard case .success = response else {
+            return XCTFail()
+        }
+    }
+    
     func test_login() {
         let server = AsteroidWatchLoginAPI.Server()
-        let email = "jackhernandez@gmail.com"
-        let profile = Account.Profile(name: "Jack", age: 38)
-        let password = "football88"
-        print("Signup in \(#function): \(server.signup(email: email, password: password, profile: profile))")
-        let response = server.login(email: email, password: password)
+        print("Signup in \(#function): \(server.signup(email: valid_email, password: password, profile: profile))")
+        let response = server.login(email: valid_email, password: password)
         guard case .success = response else {
             return XCTFail()
         }
@@ -14,10 +23,15 @@ final class ServerSideTests: Hopes {
     
     func test_signup() {
         let server = AsteroidWatchLoginAPI.Server()
-        let email = "jackhernandez@gmail.com"
-        let profile = Account.Profile(name: "Jack", age: 38)
-        let password = "football88"
-        hope(server.signup(email: email, password: password, profile: profile)) == true
+        hope(server.signup(email: valid_email, password: password, profile: profile)) == true
+    }
+    
+    func test_valid_email() {
+        hope(valid_email.validEmail) == true
+    }
+    
+    func test_invalid_email() {
+        hope(invalid_email.validEmail) == false
     }
     
 }
