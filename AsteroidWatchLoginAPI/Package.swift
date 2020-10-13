@@ -17,13 +17,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "AsteroidWatchLoginAPI",
-            dependencies: [
-                .byName(name: "Hope")
-            ]
+            name: "AsteroidWatchLoginAPI"
         ),
         .testTarget(
             name: "AsteroidWatchLoginAPITests",
-            dependencies: ["AsteroidWatchLoginAPI"]),
+            dependencies: ["AsteroidWatchLoginAPI", "Hope"]
+        )
     ]
 )

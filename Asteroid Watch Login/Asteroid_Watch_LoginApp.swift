@@ -1,17 +1,16 @@
-//
-//  Asteroid_Watch_LoginApp.swift
-//  Asteroid Watch Login
-//
-//  Created by Marko Rankovic on 10/6/20.
-//
+@_exported import SwiftUI
+@_exported import AsteroidWatchLoginAPI
 
-import SwiftUI
+typealias Client = AsteroidWatchLoginAPI.Client
 
 @main
 struct Asteroid_Watch_LoginApp: App {
+    
+    let client = Client()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(app: self)
         }
     }
 }

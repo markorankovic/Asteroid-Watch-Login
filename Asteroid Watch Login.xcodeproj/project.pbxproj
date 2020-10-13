@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6AFBE32534783E00AE0BA3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AFBE22534783E00AE0BA3 /* WelcomeView.swift */; };
+		AD6D62462535C62E000E8B1A /* AsteroidWatchLoginAPI in Frameworks */ = {isa = PBXBuildFile; productRef = AD6D62452535C62E000E8B1A /* AsteroidWatchLoginAPI */; };
 		ADCE1650252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */; };
 		ADCE1652252CECA0001EF2C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE1651252CECA0001EF2C2 /* ContentView.swift */; };
 		ADCE1654252CECA2001EF2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCE1653252CECA2001EF2C2 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD6AFBE22534783E00AE0BA3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		AD7408342534CA6800754950 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
 		ADCE164C252CECA0001EF2C2 /* Asteroid Watch Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asteroid Watch Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid_Watch_LoginApp.swift; sourceTree = "<group>"; };
 		ADCE1651252CECA0001EF2C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6D62462535C62E000E8B1A /* AsteroidWatchLoginAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,7 @@
 				ADCE1660252CECA2001EF2C2 /* Asteroid Watch LoginTests */,
 				ADCE166B252CECA2001EF2C2 /* Asteroid Watch LoginUITests */,
 				ADCE164D252CECA0001EF2C2 /* Products */,
+				ADDF189C2534BB07006B5399 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,10 +101,11 @@
 		ADCE164E252CECA0001EF2C2 /* Asteroid Watch Login */ = {
 			isa = PBXGroup;
 			children = (
+				ADCE1658252CECA2001EF2C2 /* Info.plist */,
 				ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */,
 				ADCE1651252CECA0001EF2C2 /* ContentView.swift */,
+				AD6AFBE22534783E00AE0BA3 /* WelcomeView.swift */,
 				ADCE1653252CECA2001EF2C2 /* Assets.xcassets */,
-				ADCE1658252CECA2001EF2C2 /* Info.plist */,
 				ADCE1655252CECA2001EF2C2 /* Preview Content */,
 			);
 			path = "Asteroid Watch Login";
@@ -130,6 +137,14 @@
 			path = "Asteroid Watch LoginUITests";
 			sourceTree = "<group>";
 		};
+		ADDF189C2534BB07006B5399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD7408342534CA6800754950 /* libswiftWebKit.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +161,9 @@
 			dependencies = (
 			);
 			name = "Asteroid Watch Login";
+			packageProductDependencies = (
+				AD6D62452535C62E000E8B1A /* AsteroidWatchLoginAPI */,
+			);
 			productName = "Asteroid Watch Login";
 			productReference = ADCE164C252CECA0001EF2C2 /* Asteroid Watch Login.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +182,8 @@
 				ADCE165F252CECA2001EF2C2 /* PBXTargetDependency */,
 			);
 			name = "Asteroid Watch LoginTests";
+			packageProductDependencies = (
+			);
 			productName = "Asteroid Watch LoginTests";
 			productReference = ADCE165D252CECA2001EF2C2 /* Asteroid Watch LoginTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -182,6 +202,8 @@
 				ADCE166A252CECA2001EF2C2 /* PBXTargetDependency */,
 			);
 			name = "Asteroid Watch LoginUITests";
+			packageProductDependencies = (
+			);
 			productName = "Asteroid Watch LoginUITests";
 			productReference = ADCE1668252CECA2001EF2C2 /* Asteroid Watch LoginUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -260,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADCE1652252CECA0001EF2C2 /* ContentView.swift in Sources */,
+				AD6AFBE32534783E00AE0BA3 /* WelcomeView.swift in Sources */,
 				ADCE1650252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +377,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -405,9 +429,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -419,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
-				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,10 +453,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,7 +471,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
-				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,10 +479,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.markorankovic.Asteroid-Watch-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -462,8 +496,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				INFOPLIST_FILE = "Asteroid Watch LoginTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,8 +518,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				INFOPLIST_FILE = "Asteroid Watch LoginTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				INFOPLIST_FILE = "Asteroid Watch LoginUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +559,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				INFOPLIST_FILE = "Asteroid Watch LoginUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -576,6 +614,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD6D62452535C62E000E8B1A /* AsteroidWatchLoginAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AsteroidWatchLoginAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADCE1644252CECA0001EF2C2 /* Project object */;
 }

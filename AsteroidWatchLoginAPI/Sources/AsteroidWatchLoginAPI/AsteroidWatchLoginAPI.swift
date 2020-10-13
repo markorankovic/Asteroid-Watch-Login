@@ -37,10 +37,8 @@ public class Account {
     
 }
 
-public struct AsteroidWatchLoginAPI {
-    
-    public init() {}
-    
+public enum AsteroidWatchLoginAPI {
+        
     public class Server {
         public let delay = 3.0
         internal var emailPasswordAccountPairs: [Email : (Password, Account)] = [:]
