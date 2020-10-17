@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0D0C27253752A80091178F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D0C26253752A80091178F /* LoginView.swift */; };
+		AD0D0C2C25376B730091178F /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D0C2B25376B730091178F /* SignupView.swift */; };
+		AD0D0C312537705C0091178F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0D0C302537705C0091178F /* ProfileView.swift */; };
 		AD6AFBE32534783E00AE0BA3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AFBE22534783E00AE0BA3 /* WelcomeView.swift */; };
 		AD6D62462535C62E000E8B1A /* AsteroidWatchLoginAPI in Frameworks */ = {isa = PBXBuildFile; productRef = AD6D62452535C62E000E8B1A /* AsteroidWatchLoginAPI */; };
+		ADA30F11253A407400D030FD /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA30F10253A407400D030FD /* LogoView.swift */; };
+		ADA30F1B253A40D000D030FD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA30F19253A40D000D030FD /* background.png */; };
+		ADA30F1C253A40D000D030FD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA30F1A253A40D000D030FD /* logo.png */; };
 		ADCE1650252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */; };
 		ADCE1652252CECA0001EF2C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCE1651252CECA0001EF2C2 /* ContentView.swift */; };
 		ADCE1654252CECA2001EF2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCE1653252CECA2001EF2C2 /* Assets.xcassets */; };
@@ -35,8 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0D0C26253752A80091178F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD0D0C2B25376B730091178F /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		AD0D0C302537705C0091178F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AD6AFBE22534783E00AE0BA3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		AD7408342534CA6800754950 /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
+		ADA30F10253A407400D030FD /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		ADA30F19253A40D000D030FD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		ADA30F1A253A40D000D030FD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		ADCE164C252CECA0001EF2C2 /* Asteroid Watch Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asteroid Watch Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid_Watch_LoginApp.swift; sourceTree = "<group>"; };
 		ADCE1651252CECA0001EF2C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADA30F18253A409300D030FD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ADA30F19253A40D000D030FD /* background.png */,
+				ADA30F1A253A40D000D030FD /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		ADCE1643252CECA0001EF2C2 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +122,17 @@
 		ADCE164E252CECA0001EF2C2 /* Asteroid Watch Login */ = {
 			isa = PBXGroup;
 			children = (
+				ADA30F18253A409300D030FD /* Images */,
 				ADCE1658252CECA2001EF2C2 /* Info.plist */,
 				ADCE164F252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift */,
 				ADCE1651252CECA0001EF2C2 /* ContentView.swift */,
+				AD0D0C26253752A80091178F /* LoginView.swift */,
+				AD0D0C302537705C0091178F /* ProfileView.swift */,
+				AD0D0C2B25376B730091178F /* SignupView.swift */,
 				AD6AFBE22534783E00AE0BA3 /* WelcomeView.swift */,
 				ADCE1653252CECA2001EF2C2 /* Assets.xcassets */,
 				ADCE1655252CECA2001EF2C2 /* Preview Content */,
+				ADA30F10253A407400D030FD /* LogoView.swift */,
 			);
 			path = "Asteroid Watch Login";
 			sourceTree = "<group>";
@@ -255,7 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA30F1C253A40D000D030FD /* logo.png in Resources */,
 				ADCE1657252CECA2001EF2C2 /* Preview Assets.xcassets in Resources */,
+				ADA30F1B253A40D000D030FD /* background.png in Resources */,
 				ADCE1654252CECA2001EF2C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +311,11 @@
 			files = (
 				ADCE1652252CECA0001EF2C2 /* ContentView.swift in Sources */,
 				AD6AFBE32534783E00AE0BA3 /* WelcomeView.swift in Sources */,
+				AD0D0C27253752A80091178F /* LoginView.swift in Sources */,
 				ADCE1650252CECA0001EF2C2 /* Asteroid_Watch_LoginApp.swift in Sources */,
+				ADA30F11253A407400D030FD /* LogoView.swift in Sources */,
+				AD0D0C312537705C0091178F /* ProfileView.swift in Sources */,
+				AD0D0C2C25376B730091178F /* SignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -471,7 +503,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Asteroid Watch Login/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Asteroid Watch Login/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

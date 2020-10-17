@@ -5,12 +5,9 @@ typealias Client = AsteroidWatchLoginAPI.Client
 
 @main
 struct Asteroid_Watch_LoginApp: App {
-    
-    let client = Client()
-    
     var body: some Scene {
         WindowGroup {
-            ContentView(app: self)
+            ContentView(api: Client())
         }
     }
 }

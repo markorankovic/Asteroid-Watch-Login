@@ -6,6 +6,7 @@ extension AsteroidWatchLoginAPI.Client: ClientSideProtocol {
                 return promise(.failure(APIError(message: "Server deallocated")))
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + self.server.delay) {
+                print(1)
                 return promise(.success(self.server.exists(email)))
             }
         }

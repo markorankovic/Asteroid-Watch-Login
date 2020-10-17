@@ -1,3 +1,14 @@
+public enum Gender: String {
+    case male
+    case female
+    case other
+}
+
+extension String {
+    public var validEmail: Bool { contains("@") }
+    public var validPassword: Bool { !isEmpty }
+}
+
 public enum ProfileResponse {
     case error(String)
     case success(Account.Profile)
@@ -25,12 +36,14 @@ public class Account {
     
     public class Profile {
         
-        var name: String
-        var age: Int
+        public var name: String
+        public var age: Int
+        public var gender: Gender
         
-        public init(name: String, age: Int) {
+        public init(name: String, age: Int, gender: Gender) {
             self.name = name
             self.age = age
+            self.gender = gender
         }
         
     }
