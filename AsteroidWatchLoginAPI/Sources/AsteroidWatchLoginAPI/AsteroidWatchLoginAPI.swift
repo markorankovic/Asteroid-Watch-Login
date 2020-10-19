@@ -1,4 +1,4 @@
-public enum Gender: String {
+public enum Gender: String, Codable {
     case male
     case female
     case other
@@ -24,8 +24,7 @@ public enum LogoutResponse {
     case success(String)
 }
 
-public class Account {
-    
+public class Account: Codable {
     var email: Email
     let profile: Profile
     
@@ -34,8 +33,7 @@ public class Account {
         self.profile = profile
     }
     
-    public class Profile {
-        
+    public class Profile: Codable {
         public var name: String
         public var age: Int
         public var gender: Gender
@@ -45,7 +43,6 @@ public class Account {
             self.age = age
             self.gender = gender
         }
-        
     }
     
 }
@@ -54,8 +51,9 @@ public enum AsteroidWatchLoginAPI {
         
     public class Server {
         public let delay = 3.0
-        internal var emailPasswordAccountPairs: [Email : (Password, Account)] = [:]
-        internal var loggedInAccounts: [Token : Account] = [:]
+        var emailPasswordAccountPairs: [Email : (Password, Account)] = [:]
+        var loggedInAccounts: [Token : Account] = [:]
+
         public init() {}
     }
     

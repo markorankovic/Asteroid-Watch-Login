@@ -1,6 +1,6 @@
 struct LoginView: View {
     
-    let api: Client
+    @Binding var api: Client
     
     let email: Email
     
@@ -10,7 +10,7 @@ struct LoginView: View {
         }
     }
     
-    @Binding var token: Token?
+    @Binding var token: Token
     
     @Binding var profile: Account.Profile?
     

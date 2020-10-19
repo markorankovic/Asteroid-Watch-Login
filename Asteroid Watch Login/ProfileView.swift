@@ -1,8 +1,8 @@
 struct ProfileView: View {
     
-    let api: Client
+    @Binding var api: Client
     @Binding var profile: Account.Profile?
-    @Binding var token: Token?
+    @Binding var token: Token
     
     var body: some View {
         if let profile = profile {
@@ -30,7 +30,6 @@ struct ProfileView: View {
     @State private var bag: Set<AnyCancellable> = []
 
     func logout() {
-        guard let token = token else { return }
         api.logout(token: token).sink(receiveCompletion: { _ in
             print("Completed.")
         }, receiveValue: {

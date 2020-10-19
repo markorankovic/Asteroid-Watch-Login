@@ -1,6 +1,6 @@
 struct WelcomeView: View {
     
-    let api: Client
+    @Binding var api: Client
     
     @State private var selection: String? = nil
     
@@ -14,7 +14,7 @@ struct WelcomeView: View {
     
     @State var isRequesting: Bool = false
     
-    @Binding var token: Token?
+    @Binding var token: Token
     
     var body: some View {
         NavigationView {
@@ -25,12 +25,12 @@ struct WelcomeView: View {
                     .padding()
                 HStack {
                     NavigationLink(
-                        destination: LoginView(api: api, email: email, token: $token, profile: $profile),
+                        destination: LoginView(api: $api, email: email, token: $token, profile: $profile),
                         tag: "LoginView",
                         selection: $selection
                     ) { EmptyView() }
                     NavigationLink(
-                        destination: SignupView(token: $token, api: api, email: email, profile: $profile),
+                        destination: SignupView(token: $token, api: $api, email: email, profile: $profile),
                         tag: "SignupView",
                         selection: $selection
                     ) { EmptyView() }
